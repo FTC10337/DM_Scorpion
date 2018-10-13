@@ -1,0 +1,4 @@
+#Sat Oct 13 14:32:59 CDT 2018
+base.0=/Users/Hayk/Development/GitHub/ftc_app/TeamCode/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
