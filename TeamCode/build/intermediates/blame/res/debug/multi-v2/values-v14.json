@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Hayk/Development/GitHub/ftc_app/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/Users/Hayk/Development/GitHub/DM_Scorpion/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/Hayk/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/5e04265187df0489dd41e38c402cc5dd/res/values-v14/values-v14.xml",
+                    "source": "/Users/Hayk/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/6413c9e5eeddf83e739822794ddfdfea/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
