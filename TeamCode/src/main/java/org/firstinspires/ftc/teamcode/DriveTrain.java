@@ -69,6 +69,7 @@ public class DriveTrain {
     HardwareMap hwMap           =  null;
 
     private ElapsedTime period  = new ElapsedTime();
+
     public DriveTrain() {
     }
 
@@ -90,10 +91,14 @@ public class DriveTrain {
         rightRear.setDirection(DcMotor.Direction.REVERSE);
 
         //setting motors to use Encoders
-//        leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        leftRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        rightRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        leftRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        rightRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        leftFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        leftRear.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        rightFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        rightRear.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 //        leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 //        leftRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 //        rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
