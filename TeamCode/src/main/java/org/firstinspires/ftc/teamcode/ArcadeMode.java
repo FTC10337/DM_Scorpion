@@ -76,7 +76,6 @@ public class ArcadeMode extends OpMode
     public void init() {
 
         telemetry.addData("Scorpion Says", "Hello DarkMatter!");
-        telemetry.addData("Status", "Initialized");
 
         scorpion.init(hardwareMap);
 
@@ -112,6 +111,13 @@ public class ArcadeMode extends OpMode
         double drive = -gamepad1.left_stick_y;
         double turn  =  gamepad1.right_stick_x;
 
+        telemetry.addData("Path0",  "Starting at %7d :%7d :%7d :%7d",
+                scorpion.leftFront.getCurrentPosition(),
+                scorpion.leftRear.getCurrentPosition(),
+                scorpion.rightFront.getCurrentPosition(),
+                scorpion.rightRear.getCurrentPosition());
+        telemetry.update();
+
         // Tank Mode uses one stick to control each wheel.
         // leftPower  = -gamepad1.left_stick_y ;
         // rightPower = -gamepad1.right_stick_y ;
@@ -143,7 +149,7 @@ public class ArcadeMode extends OpMode
             turnCoefficient = 4;
             driveCoefficient = 2;
         }else{
-            turnCoefficient = 1.5;
+            turnCoefficient = 1;
             driveCoefficient = 1;
         }
 

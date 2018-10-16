@@ -72,7 +72,7 @@ public class Autonomus extends LinearOpMode {
     DriveTrain scorpion = new DriveTrain();
     private ElapsedTime     runtime = new ElapsedTime();
 
-    static final double     COUNTS_PER_MOTOR_REV    = 7 ;    // Neverrest
+    static final double     COUNTS_PER_MOTOR_REV    = 7 ;    // Neverrest 20
     static final double     DRIVE_GEAR_REDUCTION    = 19.2 * 72 / 48  ;     // This is < 1.0 if geared UP
     static final double     WHEEL_DIAMETER_INCHES   = 4.0 ;     // For figuring circumference
     static final double     COUNTS_PER_INCH         = (4 * COUNTS_PER_MOTOR_REV * DRIVE_GEAR_REDUCTION) /
@@ -90,7 +90,7 @@ public class Autonomus extends LinearOpMode {
 //        telemetry.update();
 
         // Send telemetry message to indicate successful Encoder reset
-        telemetry.addData("Path0",  "Starting at %7d :%7d",
+        telemetry.addData("Path0",  "tarting at %7d :%7d :%7d :%7d",
                 scorpion.leftFront.getCurrentPosition(),
                 scorpion.leftRear.getCurrentPosition(),
                 scorpion.rightFront.getCurrentPosition(),
@@ -102,9 +102,10 @@ public class Autonomus extends LinearOpMode {
 
         // Step through each leg of the path,
         // Note: Reverse movement is obtained by setting a negative distance (not speed)
-        encoderDrive(DRIVE_SPEED,  48,  48, 5.0);  // S1: Forward 47 Inches with 5 Sec timeout
-        encoderDrive(TURN_SPEED,   12, -12, 4.0);  // S2: Turn Right 12 Inches with 4 Sec timeout
-        encoderDrive(DRIVE_SPEED, -24, -24, 4.0);  // S3: Reverse 24 Inches with 4 Sec timeout
+        encoderDrive(DRIVE_SPEED,  -73,  -73, 8.0);  // S1: Forward 73 Inches with 8 Sec timeout
+        sleep(300);
+        encoderDrive(TURN_SPEED,   -12, 12, 2);  // S2: Turn Right 6 Inches with 2.5 Sec timeout
+        encoderDrive(DRIVE_SPEED, -86, -86, 10.0);  // S3: Forward 86 Inches with 10 Sec timeout
 
 //        robot.leftClaw.setPosition(1.0);            // S4: Stop and close the claw.
 //        robot.rightClaw.setPosition(0.0);
@@ -123,8 +124,10 @@ public class Autonomus extends LinearOpMode {
      *  3) Driver stops the opmode running.
      */
     public void encoderDrive(double speed,
-                             double leftInches, double rightInches,
+                             double leftInches,
+                             double rightInches,
                              double timeoutS) {
+
         int newLeftTargetF;
         int newLeftTargetR;
         int newRightTargetF;

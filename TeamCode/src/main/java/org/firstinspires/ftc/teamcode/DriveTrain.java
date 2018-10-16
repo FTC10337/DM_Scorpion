@@ -10,8 +10,6 @@ import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.util.RobotLog;
 import com.qualcomm.robotcore.hardware.Servo;
 
-
-
 public class DriveTrain {
 
     // Declare OpMode members.
@@ -19,9 +17,6 @@ public class DriveTrain {
     public DcMotor leftRear = null;
     public DcMotor rightFront = null;
     public DcMotor rightRear = null;
-
-    public double turnCoefficient = 1;
-    public double driveCoefficient = 1;
 
     /**
      * Add deadzone to a stick value
@@ -114,7 +109,5 @@ public class DriveTrain {
 
 
     }
-
-
 
 }
