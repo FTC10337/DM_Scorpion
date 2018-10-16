@@ -90,14 +90,14 @@ public class DriveTrain {
         rightRear.setDirection(DcMotor.Direction.REVERSE);
 
         //setting motors to use Encoders
-        leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        leftRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        rightRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        leftRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        rightRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        leftRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        rightRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        leftRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        rightRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         //Setting motors with zero power when initializing
         leftFront.setPower(0);
