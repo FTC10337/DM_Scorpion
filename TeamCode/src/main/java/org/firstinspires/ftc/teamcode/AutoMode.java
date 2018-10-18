@@ -47,10 +47,23 @@ public class AutoMode extends LinearOpMode {
             newLeftRearTarget = scorpion.leftRear.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
             newRightFrontTarget = scorpion.rightFront.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
             newRightRearTarget = scorpion.rightRear.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
-            scorpion.leftFront.setTargetPosition(newLeftFrontTarget);
-            scorpion.leftRear.setTargetPosition(newLeftRearTarget);
-            scorpion.rightFront.setTargetPosition(newRightFrontTarget);
-            scorpion.rightRear.setTargetPosition(newRightRearTarget);
+
+            while (scorpion.leftFront.getTargetPosition() != newLeftFrontTarget) {
+                scorpion.leftFront.setTargetPosition(newLeftFrontTarget);
+                sleep(1);
+            }
+            while (scorpion.leftRear.getTargetPosition() != newLeftRearTarget) {
+                scorpion.leftRear.setTargetPosition(newLeftRearTarget);
+                sleep(1);
+            }
+            while (scorpion.rightFront.getTargetPosition() != newRightFrontTarget) {
+                scorpion.rightFront.setTargetPosition(newRightFrontTarget);
+                sleep(1);
+            }
+            while (scorpion.rightRear.getTargetPosition() != newRightRearTarget) {
+                scorpion.rightRear.setTargetPosition(newRightRearTarget);
+                sleep(1);
+            }
 
             // Turn On RUN_TO_POSITION
             scorpion.setDriveMode(DcMotor.RunMode.RUN_TO_POSITION);
@@ -58,7 +71,7 @@ public class AutoMode extends LinearOpMode {
             // reset the timeout time and start motion.
             runtime.reset();
 
-            // Setting power to DcMotors
+            // Setting power to DcMotors and make sure the speed it positive with Math.abs
             scorpion.setPowerLevel(Math.abs(speed));
 
             // keep looping while we are still active, and there is time left, and both motors are running.
@@ -69,7 +82,10 @@ public class AutoMode extends LinearOpMode {
             // onto the next step, use (isBusy() || isBusy()) in the loop test.
             while (opModeIsActive() &&
                     (runtime.seconds() < timeoutS) &&
-                    (scorpion.leftFront.isBusy() && scorpion.leftRear.isBusy() && scorpion.rightFront.isBusy() && scorpion.rightRear.isBusy())) {
+                    scorpion.leftFront.isBusy() &&
+                    scorpion.leftRear.isBusy() &&
+                    scorpion.rightFront.isBusy() &&
+                    scorpion.rightRear.isBusy()) {
 
                 // Display it for the driver.
                 telemetry.addData("Path1",  "Running to %7d :%7d :%7d :%7d",
@@ -91,7 +107,8 @@ public class AutoMode extends LinearOpMode {
             // Turn off RUN_TO_POSITION
             scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-            //  sleep(250);   // optional pause after each move
+            // Pause after each move
+            sleep(250);
         }
     }
 
@@ -118,13 +135,8 @@ public class AutoMode extends LinearOpMode {
 
         // Step through each leg of the path,
         encoderDrive(DRIVE_SPEED, 40, 40, 3.0);
-        sleep(300);
         encoderDrive(TURN_SPEED, 12, -12, 2.0);
         encoderDrive(DRIVE_SPEED, 20, 20, 2.0);
-
-//        robot.leftClaw.setPosition(1.0);            // S4: Stop and close the claw.
-//        robot.rightClaw.setPosition(0.0);
-//        sleep(1000);     // pause for servos to move
 
         telemetry.addData("Path", "Complete");
         telemetry.update();
