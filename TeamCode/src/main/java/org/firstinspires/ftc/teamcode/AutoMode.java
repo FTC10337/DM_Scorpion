@@ -23,7 +23,7 @@ public class AutoMode extends LinearOpMode {
     static final double     DRIVE_SPEED             = 0.4;
     static final double     TURN_SPEED              = 0.3;
 
-    /*
+    /**
      *  Method to perfmorm a relative move, based on encoder counts.
      *  Encoders are not reset as the move is based on the current position.
      *  Move will stop if any of three conditions occur:
@@ -31,9 +31,9 @@ public class AutoMode extends LinearOpMode {
      *  2) Move runs out of time
      *  3) Driver stops the opmode running.
      */
-
     public void encoderDrive(double speed, double leftInches, double rightInches, double timeoutS) {
 
+        // Creating new targets for each DcMotor
         int newLeftFrontTarget;
         int newLeftRearTarget;
         int newRightFrontTarget;
@@ -58,7 +58,8 @@ public class AutoMode extends LinearOpMode {
             // reset the timeout time and start motion.
             runtime.reset();
 
-            scorpion.setPowerMode(Math.abs(speed));
+            // Setting power to DcMotors
+            scorpion.setPowerLevel(Math.abs(speed));
 
             // keep looping while we are still active, and there is time left, and both motors are running.
             // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
@@ -85,7 +86,7 @@ public class AutoMode extends LinearOpMode {
             }
 
             // Stop all motion;
-            scorpion.setPowerMode(0);
+            scorpion.setPowerLevel(0);
 
             // Turn off RUN_TO_POSITION
             scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);

@@ -29,7 +29,7 @@ public class ArcadeMode extends OpMode
         scorpion.init(hardwareMap);
 
         // Stop all motion;
-        scorpion.setPowerMode(0);
+        scorpion.setPowerLevel(0);
 
         //setting motors to use Encoders
         scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -40,18 +40,14 @@ public class ArcadeMode extends OpMode
         RobotLog.i("Initialized, Ready to Start!");
     }
 
-    /*
-     * Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
-     */
+    //Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
     @Override
     public void init_loop() {}
 
     @Override
     public void start() { runtime.reset(); }
 
-    /*
-     * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
-     */
+    //Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
     @Override
     public void loop() {
 
@@ -106,11 +102,9 @@ public class ArcadeMode extends OpMode
         telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
     }
 
-    /*
-     * Code to run ONCE after the driver hits STOP
-     */
+
+    //Code to run ONCE after the driver hits STOP
     @Override
-    public void stop() {
-    }
+    public void stop() {}
 
 }

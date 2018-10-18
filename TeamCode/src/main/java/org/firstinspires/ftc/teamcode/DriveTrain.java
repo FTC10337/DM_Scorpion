@@ -71,9 +71,7 @@ public class DriveTrain {
 
     private ElapsedTime period  = new ElapsedTime();
 
-    public DriveTrain() {
-    }
-
+    public DriveTrain() {}
 
     public void init (HardwareMap ahwMap) {
 
@@ -85,7 +83,7 @@ public class DriveTrain {
         rightFront = hwMap.get(DcMotor.class, "right-front");
         rightRear = hwMap.get(DcMotor.class, "right-rear");
 
-        //Setting direction of motor's rotation
+        // Setting direction of DcMotor rotation
         leftFront.setDirection(DcMotor.Direction.REVERSE);
         leftRear.setDirection(DcMotor.Direction.REVERSE);
         rightFront.setDirection(DcMotor.Direction.FORWARD);
@@ -93,7 +91,7 @@ public class DriveTrain {
 
     }
 
-
+    // Creating public object to reuse setMode()
     public void setDriveMode (DcMotor.RunMode mode) {
         leftFront.setMode(mode);
         leftRear.setMode(mode);
@@ -101,7 +99,8 @@ public class DriveTrain {
         rightRear.setMode(mode);
     }
 
-    public void setPowerMode(double power) {
+    // Creating public object to reuse setPower()
+    public void setPowerLevel(double power) {
         leftFront.setPower(power);
         leftRear.setPower(power);
         rightFront.setPower(power);

@@ -7,29 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb6ed461-7a4d-4120-8488-00e0c3118258" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/firstinspires/ftc/teamcode/ArcadeMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/firstinspires/ftc/teamcode/ArcadeMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/firstinspires/ftc/teamcode/Autonomus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/firstinspires/ftc/teamcode/DriveTrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/firstinspires/ftc/teamcode/DriveTrain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/22.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/22.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/23.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24/org/firstinspires/ftc/teamcode/ArcadeMode.dex" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24/org/firstinspires/ftc/teamcode/ArcadeMode.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24/org/firstinspires/ftc/teamcode/Autonomus.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24/org/firstinspires/ftc/teamcode/DriveTrain.dex" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24/org/firstinspires/ftc/teamcode/DriveTrain.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/outputs/apk/debug/TeamCode-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/apk/debug/TeamCode-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java" afterDir="false" />
@@ -58,8 +35,8 @@
       <file leaf-file-name="DriveTrain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+            <state relative-caret-position="480">
+              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding>
                 <element signature="docComment;method#deadzone#0;class#DriveTrain#0" />
                 <element signature="method#deadzone#0;class#DriveTrain#0" />
@@ -69,27 +46,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArcadeMode.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArcadeMode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="485">
+              <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#ArcadeMode#0" />
                 <element signature="method#loop#0;class#ArcadeMode#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoMode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutoMode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="375">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
                 <element signature="method#encoderDrive#0;class#AutoMode#0" />
                 <element signature="method#runOpMode#0;class#AutoMode#0" />
               </folding>
@@ -3408,9 +3385,9 @@
       <list>
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autonomus.java" />
         <option value="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/PushbotAutoDriveByEncoder_Linear.java" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java" />
-        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java" />
       </list>
     </option>
   </component>
@@ -3716,7 +3693,6 @@
           <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#ArcadeMode#0" />
             <element signature="method#loop#0;class#ArcadeMode#0" />
           </folding>
         </state>
@@ -3728,6 +3704,7 @@
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3759,6 +3736,7 @@
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3790,6 +3768,7 @@
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3821,6 +3800,7 @@
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3852,6 +3832,7 @@
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3883,6 +3864,7 @@
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3914,6 +3896,7 @@
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3945,6 +3928,7 @@
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -3976,6 +3960,7 @@
           <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -4007,6 +3992,7 @@
           <caret line="74" column="76" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -4038,6 +4024,7 @@
           <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#encoderDrive#0;class#AutoMode#0" />
             <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
@@ -4156,8 +4143,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/DriveTrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+        <state relative-caret-position="480">
+          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding>
             <element signature="docComment;method#deadzone#0;class#DriveTrain#0" />
             <element signature="method#deadzone#0;class#DriveTrain#0" />
@@ -4166,26 +4153,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java">
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#ArcadeMode#0" />
-            <element signature="method#loop#0;class#ArcadeMode#0" />
+            <element signature="docComment;method#encoderDrive#0;class#AutoMode#0" />
+            <element signature="method#encoderDrive#0;class#AutoMode#0" />
+            <element signature="method#runOpMode#0;class#AutoMode#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoMode.java">
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ArcadeMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="485">
+          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#encoderDrive#0;class#AutoMode#0" />
-            <element signature="method#runOpMode#0;class#AutoMode#0" />
+            <element signature="method#loop#0;class#ArcadeMode#0" />
           </folding>
         </state>
       </provider>
