@@ -4,13 +4,10 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.hardware.VoltageSensor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.util.RobotLog;
 
-import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbotMatrix;
 
 @TeleOp(name="ArcadeMode", group="DarkMatter2019")
 //@Disabled
@@ -19,16 +16,24 @@ public class ArcadeMode extends OpMode
     DriveTrain scorpion = new DriveTrain();
 
     private ElapsedTime runtime = new ElapsedTime();
-    boolean slowMo = false;
+    boolean hyper = false;
     boolean isButtonPressed = true;
-    double turnCoefficient = 1;
-    double driveCoefficient = 1;
+    double turnCoefficient = 4;
+    double driveCoefficient = 2;
 
     @Override
     public void init() {
 
         telemetry.addData("Scorpion Says", "Hello DarkMatter!");
+
         scorpion.init(hardwareMap);
+
+        // Stop all motion;
+        scorpion.setPowerMode(0);
+
+        //setting motors to use Encoders
+        scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);
+
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
         telemetry.update();
@@ -39,13 +44,10 @@ public class ArcadeMode extends OpMode
      * Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
      */
     @Override
-    public void init_loop() {
-    }
+    public void init_loop() {}
 
     @Override
-    public void start() {
-        runtime.reset();
-    }
+    public void start() { runtime.reset(); }
 
     /*
      * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
@@ -83,20 +85,20 @@ public class ArcadeMode extends OpMode
 
         //Activating slowMo slow motion mode with controller left bumper
         if (gamepad1.left_bumper && isButtonPressed) {
-            slowMo = true;
-            telemetry.addData("Says", "SlowMo is ON");
+            hyper = true;
+            telemetry.addData("Says", "Hyper is ON");
         }else{
-            slowMo = false;
-            telemetry.addData("Says", "SlowMo is OFF");
+            hyper = false;
+            telemetry.addData("Says", "Hyper is OFF");
         }
 
         //Setting new values if slowMo is true
-        if (slowMo) {
-            turnCoefficient = 4;
-            driveCoefficient = 2;
-        }else{
+        if (hyper) {
             turnCoefficient = 1;
             driveCoefficient = 1;
+        }else{
+            turnCoefficient = 4;
+            driveCoefficient = 2;
         }
 
         // Show the elapsed game time and wheel power.

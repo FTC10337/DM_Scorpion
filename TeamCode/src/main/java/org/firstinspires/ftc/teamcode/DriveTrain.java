@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.VoltageSensor;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -85,34 +86,26 @@ public class DriveTrain {
         rightRear = hwMap.get(DcMotor.class, "right-rear");
 
         //Setting direction of motor's rotation
-        leftFront.setDirection(DcMotor.Direction.FORWARD);
-        leftRear.setDirection(DcMotor.Direction.FORWARD);
-        rightFront.setDirection(DcMotor.Direction.REVERSE);
-        rightRear.setDirection(DcMotor.Direction.REVERSE);
+        leftFront.setDirection(DcMotor.Direction.REVERSE);
+        leftRear.setDirection(DcMotor.Direction.REVERSE);
+        rightFront.setDirection(DcMotor.Direction.FORWARD);
+        rightRear.setDirection(DcMotor.Direction.FORWARD);
 
-        //setting motors to use Encoders
-        leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        leftRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        rightRear.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        leftFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        leftRear.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        rightFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        rightRear.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-//        leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//        leftRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//        rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//        rightRear.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-
-        //Setting motors with zero power when initializing
-        leftFront.setPower(0);
-        leftRear.setPower(0);
-        rightFront.setPower(0);
-        rightRear.setPower(0);
+    }
 
 
+    public void setDriveMode (DcMotor.RunMode mode) {
+        leftFront.setMode(mode);
+        leftRear.setMode(mode);
+        rightFront.setMode(mode);
+        rightRear.setMode(mode);
+    }
 
-
+    public void setPowerMode(double power) {
+        leftFront.setPower(power);
+        leftRear.setPower(power);
+        rightFront.setPower(power);
+        rightRear.setPower(power);
     }
 
 }

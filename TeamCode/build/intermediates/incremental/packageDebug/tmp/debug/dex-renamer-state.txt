@@ -1,4 +1,4 @@
-#Mon Oct 15 20:39:35 CDT 2018
+#Wed Oct 17 02:30:25 CDT 2018
 base.0=/Users/Hayk/Development/GitHub/DM_Scorpion/TeamCode/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
