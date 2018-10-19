@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.util.RobotLog;
 
 
-@TeleOp(name="ArcadeMode", group="DarkMatter2019")
+@TeleOp(name="Scorpion: ArcadeMode", group="DarkMatter2019")
 //@Disabled
 public class ArcadeMode extends OpMode
 {
@@ -32,7 +32,7 @@ public class ArcadeMode extends OpMode
         scorpion.setPowerLevel(0);
 
         //setting motors to use Encoders
-        scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        //scorpion.setDriveMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
